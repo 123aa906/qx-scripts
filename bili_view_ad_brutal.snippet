@@ -1,0 +1,9 @@
+#!name = B站去底部推荐广告（粗暴版）
+#!author = 基于 ZenmoFeiShi
+#!update = 2026-07-23
+# 视频详情页 View/View 接口：直接删除 field 22（相关推荐整个模块）
+# 不影响其他 B 站功能
+
+^https:\/\/app\.bilibili\.com\/bilibili\.app\.viewunite\.v1\.View\/View$ url script-response-body https://raw.githubusercontent.com/123aa906/qx-scripts/main/bili_view_ad_brutal.js
+
+hostname = app.bilibili.com
